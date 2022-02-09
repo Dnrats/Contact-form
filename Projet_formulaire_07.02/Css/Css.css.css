@@ -117,9 +117,43 @@ label{
 position: absolute;
 width: 10vw;
 height: 5vh;
-left: 136px;
-top: 739px;
+top: 610px;
+left: 250px;
 border-radius: 10px;
+border: none;
 color: white;
 background: linear-gradient(90deg, rgba(216,125,18,1) 36%, rgba(254,197,111,1) 96%);
+box-shadow: 0 6px #a5a9ad6b;
+display: block;
+cursor: pointer;
+
+}
+#submit:active {
+    box-shadow: none;
+}
+/*
+outline: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  background: #2196F3;
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 25px 80px;
+  margin: 0 auto;
+  box-shadow: 0 6px #1565c0;
+  border-radius: 5px;
+  
+  .btn:hover {
+  box-shadow: 0 4px #1565c0;
+  top: 2px;
+}
+
+.btn:active {
+  box-shadow: none;
+  top: 6px;
 }
