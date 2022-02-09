@@ -9,37 +9,31 @@ main{
     width: 100vw;
     margin: 0px;
     padding: 0px;
-    position: absolute;
 }
 #top{
 height: 50vh;
 width: 100vw;
 background-color: #FFD0C1;
-position: absolute;
-top: 0%;
-z-index: 1;
 }
 #middle{
-    z-index: 2;
     background-color: rgb(255, 255, 255);
     height: 70vh;
     width: 70vw;
     opacity: 1;
-    top: 15%;
-    left: 15%;
-    position: absolute;
     box-shadow: -10px 10px 10px rgba(103, 94, 94, 0.23);
     border-radius: 15px;
     display: grid;
     grid-template-columns: 45vw 25vw;
     grid-template-rows: 15vh 15vh 15vh 25vh;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+
 }
 #feedback{
     background: linear-gradient(0deg, rgba(106,84,123,1) 36%, rgba(7,12,75,1) 96%);
     height: 70vh;
     width: 25vw;
-    right: 0px;
-    position: absolute;
     border-radius: 0px 15px 15px 0;
 }
 #first{
@@ -61,7 +55,4 @@ z-index: 1;
     margin: 10px;
     padding: 10px;
     grid-area: 4/1/5/2;
-}
-text{
-    
 }
