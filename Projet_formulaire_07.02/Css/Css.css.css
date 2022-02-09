@@ -39,7 +39,7 @@ background-color: #FFD0C1;
 #first{
     margin: 10px;
     padding: 10px;
-    grid-area: 1/1/2/2;
+    grid-area: 1/1/2/2
 }
 #second{
     margin: 10px;
@@ -55,4 +55,15 @@ background-color: #FFD0C1;
     margin: 10px;
     padding: 10px;
     grid-area: 4/1/5/2;
+}
+#divindiv{
+    display: grid;
+    grid-template-columns: 45vw;
+    grid-template-rows: 15vh 15vh 15vh 25vh;
+}
+.text1{
+    grid-area: 1/1/2/2;
+}
+.text2{
+    grid-area: ;
 }
