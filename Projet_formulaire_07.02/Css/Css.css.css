@@ -82,19 +82,10 @@ label{
     outline: none;
     margin-left: 50px;
     margin-bottom: 50px;
+    font-family: FontAwesome;
+    font-size: 100%;
 }
 .text2{
-    width: 200px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    margin-top: 20px;
-    padding-top: 10px;
-    outline: none;
-    margin-left: 50px;
-    margin-bottom: 50px;
-}
-.text3{
     width: 250px;
     border-top: none;
     border-left: none;
@@ -104,6 +95,21 @@ label{
     outline: none;
     margin-left: 50px;
     margin-bottom: 50px;
+    font-family: FontAwesome;
+    font-size: 100%;
+}
+.text3{
+    width: 300px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 20px;
+    padding-top: 10px;
+    outline: none;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-family: FontAwesome;
+    font-size: 100%;
 }
 .text4{
     width: 300px;
@@ -113,6 +119,8 @@ label{
     border-right: none;
     outline: none;
     margin-left: 50px;
+    font-family: FontAwesome;
+    font-size: 100%;
 }
 #submit{
 position: absolute;
