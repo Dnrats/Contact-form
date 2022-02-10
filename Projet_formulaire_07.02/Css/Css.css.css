@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(/Assets/roboto/Roboto-Regular.ttf);
+    src: url(/Assets/roboto/Roboto-Black.ttf);
+    src: url(/Assets/roboto/Roboto-Bold.ttf);
+}
 body{
     background-color: rgb(255, 255, 255);
     margin: 0px;
@@ -142,10 +148,26 @@ button:active{
     transform: translateY(3px);
 }
 #p1{
-    color: white;
+    color: #ffffff;
     font-size: 30px;
     margin-left: 50px;
-}
+    font-family: "Roboto", serif;
+} 
 h1{
-    color: white;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    margin-left: 50px;
+    padding-left: 80px;
+}
+#p2{
+    color: #ffffff;
+    font-size: 30px;
+    font-family: "Roboto";
+    margin-left: 50px;
+}
+#p3{
+    color: #ffffff;
+    font-size: 30px;
+    font-family: "Roboto";
+    margin-left: 50px;
 }
