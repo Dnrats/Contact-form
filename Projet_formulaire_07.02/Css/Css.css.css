@@ -35,6 +35,10 @@ background-color: #FFD0C1;
     height: 70vh;
     width: 25vw;
     border-radius: 0px 15px 15px 0;
+    display: grid;
+    grid-template-columns: 25vw;
+    grid-template-rows: 15vh 15vh 15vh 25vh;
+
 }
 #first{
     margin: 5px;
@@ -136,4 +140,12 @@ button:active{
     background-color: #ffffff;
     box-shadow: 0 5px #ffffff;
     transform: translateY(3px);
-  }
+}
+#p1{
+    color: white;
+    font-size: 30px;
+    margin-left: 50px;
+}
+h1{
+    color: white;
+}
