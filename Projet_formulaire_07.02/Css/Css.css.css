@@ -126,8 +126,8 @@ label{
 position: absolute;
 width: 12%;
 height: 5vh;
-top: 590px;
-left: 50px;
+top: 87%;
+left: 5%;
 border-radius: 10px;
 border: none;
 color: white;
@@ -202,4 +202,425 @@ h1{
 }
 input:focus::placeholder {
     color: transparent;
+  }
+  input:required:valid {
+    border-color: green;
+  }
+
+  /* RESPONSIVE PART */
+
+ /* @media screen and (max-width: 600px) {
+        @font-face {
+            font-family: "Roboto";
+            src: url(/Assets/roboto/Roboto-Regular.ttf);
+            src: url(/Assets/roboto/Roboto-Black.ttf);
+            src: url(/Assets/roboto/Roboto-Bold.ttf);
+        }
+        body{
+            background-color: rgb(255, 255, 255);
+            margin: 0px;
+            padding: 0px;
+        }
+        main{
+            background-color: rgb(255, 255, 255);
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+        #top{
+        height: 50%;
+        width: 100%;
+        background-color: #FFD0C1;
+        }
+        #middle{
+            background-color: rgb(255, 255, 255);
+            height: 70vh;
+            width: 70vw;
+            opacity: 1;
+            box-shadow: -10px 10px 10px rgba(103, 94, 94, 0.23);
+            border-radius: 15px;
+            position: absolute;
+            top: 15%;
+            left: 15%; 
+            display: flex;
+        
+        }
+        #feedback{
+            background: linear-gradient(0deg, rgba(106,84,123,1) 36%, rgba(7,12,75,1) 96%);
+            height: 100%;
+            width: 40%;
+            border-radius: 0px 15px 15px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;  
+        }
+        #first{
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+        #second{
+            margin-left: 40px;
+            margin-top: 5px;
+        }
+        #third{
+            margin-left: 40px;
+            margin-top: 5px;
+        }
+        #fourth{
+            margin-left: 40px;
+            margin-top: 5px;
+        }
+        #divindiv{
+        height: 100%;
+        width: 60%;   
+        }
+        label{
+            font-size: 1.5vw;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+            padding-left: 20px;
+        
+        }
+        .text1{
+            width: 40%;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            margin-top: 20px;
+            padding-top: 10px;
+            outline: none;
+            margin-left: 50px;
+            margin-bottom: 50px;
+            font-family: FontAwesome;
+            font-size: 100%;
+        }
+        .text2{
+            width: 40%;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            margin-top: 20px;
+            padding-top: 10px;
+            outline: none;
+            margin-left: 50px;
+            margin-bottom: 50px;
+            font-family: FontAwesome;
+            font-size: 100%;
+        }
+        .text3{
+            width: 40%;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            margin-top: 20px;
+            padding-top: 10px;
+            outline: none;
+            margin-left: 50px;
+            margin-bottom: 50px;
+            font-family: FontAwesome;
+            font-size: 100%;
+        }
+        .text4{
+            width: 40%;
+            height: 10%;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            outline: none;
+            margin-left: 50px;
+            font-family: FontAwesome;
+            font-size: 100%;
+        }
+        #submit{
+        position: absolute;
+        width: 12%;
+        height: 5vh;
+        top: 87%;
+        left: 5%;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        background: linear-gradient(90deg, rgba(216,125,18,1) 36%, rgba(254,197,111,1) 96%);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        display: block;
+        cursor: pointer;
+        font-size: 150%;
+        
+        }
+        #submit:active {
+            box-shadow: none;
+        }
+        #submit:active{
+            transform: translateY(3px);
+        }
+        h1{
+            color: #ffffff;
+            font-family: "Roboto", sans-serif;
+            margin-left: 175px;
+            font-size: 30px;
+        }
+        #p1{
+            color: #ffffff;
+            font-size: 25px;
+            font-family: "Roboto", sans-serif;
+        } 
+        #p2{
+            color: #ffffff;
+            font-size: 25px;
+            font-family: "Roboto", sans-serif;
+        }
+        #p3{
+            color: #ffffff;
+            font-size: 25px;
+            font-family: "Roboto", sans-serif;
+            margin-right: 5%;
+        }
+        .icons1{
+            width: 55px;
+            height: 55px;
+            float: left;
+            margin-right: 2%;
+            margin-left: 8%;
+            
+        }
+        .icons2{
+            width: 45px;
+            height: 45px;
+            float: left;
+            margin-right: 2%;
+            margin-left: 8%;
+        }
+        .icons3{
+            width: 50px;
+            height: 50px;
+            float: left;
+            margin-right: 2%;
+            margin-left: 8%;
+        }
+        .divmail{
+            display: flex;
+            align-items: center;
+        }
+        .divphone{
+            display: flex;
+            align-items: center;
+        }
+        .divloc{
+            display: flex;
+            align-items: center;
+        }
+        input:focus::placeholder {
+            color: transparent;
+          }  
+    }
+  
+  @media screen and (max-width: 992px) {
+    @font-face {
+        font-family: "Roboto";
+        src: url(/Assets/roboto/Roboto-Regular.ttf);
+        src: url(/Assets/roboto/Roboto-Black.ttf);
+        src: url(/Assets/roboto/Roboto-Bold.ttf);
+    }
+    body{
+        background-color: rgb(255, 255, 255);
+        margin: 0px;
+        padding: 0px;
+    }
+    main{
+        background-color: rgb(255, 255, 255);
+        height: 100vh;
+        width: 100vw;
+        margin: 0px;
+        padding: 0px;
+    }
+    #top{
+    height: 50vh;
+    width: 100vw;
+    background-color: #FFD0C1;
+    }
+    #middle{
+        background-color: rgb(255, 255, 255);
+        height: 70vh;
+        width: 70vw;
+        opacity: 1;
+        box-shadow: -10px 10px 10px rgba(103, 94, 94, 0.23);
+        border-radius: 15px;
+        position: absolute;
+        top: 15%;
+        left: 15%; 
+        display: flex;
+    
+    }
+    #feedback{
+        background: linear-gradient(0deg, rgba(106,84,123,1) 36%, rgba(7,12,75,1) 96%);
+        height: 100%;
+        width: 40%;
+        border-radius: 0px 15px 15px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;  
+    }
+    #first{
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+    #second{
+        margin-left: 40px;
+        margin-top: 5px;
+    }
+    #third{
+        margin-left: 40px;
+        margin-top: 5px;
+    }
+    #fourth{
+        margin-left: 40px;
+        margin-top: 5px;
+    }
+    #divindiv{
+    height: 100%;
+    width: 60%;   
+    }
+    label{
+        font-size: 1.5vw;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        padding-left: 20px;
+    
+    }
+    .text1{
+        width: 40%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin-top: 20px;
+        padding-top: 10px;
+        outline: none;
+        margin-left: 50px;
+        margin-bottom: 50px;
+        font-family: FontAwesome;
+        font-size: 100%;
+    }
+    .text2{
+        width: 40%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin-top: 20px;
+        padding-top: 10px;
+        outline: none;
+        margin-left: 50px;
+        margin-bottom: 50px;
+        font-family: FontAwesome;
+        font-size: 100%;
+    }
+    .text3{
+        width: 40%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin-top: 20px;
+        padding-top: 10px;
+        outline: none;
+        margin-left: 50px;
+        margin-bottom: 50px;
+        font-family: FontAwesome;
+        font-size: 100%;
+    }
+    .text4{
+        width: 40%;
+        height: 10%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        outline: none;
+        margin-left: 50px;
+        font-family: FontAwesome;
+        font-size: 100%;
+    }
+    #submit{
+    position: absolute;
+    width: 12%;
+    height: 5vh;
+    top: 87%;
+    left: 5%;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background: linear-gradient(90deg, rgba(216,125,18,1) 36%, rgba(254,197,111,1) 96%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    display: block;
+    cursor: pointer;
+    font-size: 150%;
+    
+    }
+    #submit:active {
+        box-shadow: none;
+    }
+    #submit:active{
+        transform: translateY(3px);
+    }
+    h1{
+        color: #ffffff;
+        font-family: "Roboto", sans-serif;
+        margin-left: 175px;
+        font-size: 30px;
+    }
+    #p1{
+        color: #ffffff;
+        font-size: 25px;
+        font-family: "Roboto", sans-serif;
+    } 
+    #p2{
+        color: #ffffff;
+        font-size: 25px;
+        font-family: "Roboto", sans-serif;
+    }
+    #p3{
+        color: #ffffff;
+        font-size: 25px;
+        font-family: "Roboto", sans-serif;
+        margin-right: 5%;
+    }
+    .icons1{
+        width: 55px;
+        height: 55px;
+        float: left;
+        margin-right: 2%;
+        margin-left: 8%;
+        
+    }
+    .icons2{
+        width: 45px;
+        height: 45px;
+        float: left;
+        margin-right: 2%;
+        margin-left: 8%;
+    }
+    .icons3{
+        width: 50px;
+        height: 50px;
+        float: left;
+        margin-right: 2%;
+        margin-left: 8%;
+    }
+    .divmail{
+        display: flex;
+        align-items: center;
+    }
+    .divphone{
+        display: flex;
+        align-items: center;
+    }
+    .divloc{
+        display: flex;
+        align-items: center;
+    }
+    input:focus::placeholder {
+        color: transparent;
+      }
   }
