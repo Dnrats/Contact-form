@@ -73,7 +73,7 @@ label{
 
 }
 .text1{
-    width: 200px;
+    width: 40%;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -86,7 +86,7 @@ label{
     font-size: 100%;
 }
 .text2{
-    width: 250px;
+    width: 40%;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -99,7 +99,7 @@ label{
     font-size: 100%;
 }
 .text3{
-    width: 300px;
+    width: 40%;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -112,8 +112,8 @@ label{
     font-size: 100%;
 }
 .text4{
-    width: 300px;
-    height: 50px;
+    width: 40%;
+    height: 10%;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -124,7 +124,7 @@ label{
 }
 #submit{
 position: absolute;
-width: 10vw;
+width: 12%;
 height: 5vh;
 top: 590px;
 left: 50px;
@@ -135,7 +135,7 @@ background: linear-gradient(90deg, rgba(216,125,18,1) 36%, rgba(254,197,111,1) 9
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 display: block;
 cursor: pointer;
-font-size: 30px;
+font-size: 150%;
 
 }
 #submit:active {
@@ -200,3 +200,6 @@ h1{
     display: flex;
     align-items: center;
 }
+input:focus::placeholder {
+    color: transparent;
+  }
