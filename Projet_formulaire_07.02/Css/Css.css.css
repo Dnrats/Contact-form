@@ -41,24 +41,22 @@ background-color: #FFD0C1;
     border-radius: 0px 15px 15px 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;  
+    justify-content: space-evenly; 
+    text-align: center;
+    margin: 0px; 
 }
-#first{
-    margin-left: 40px;
-    margin-top: 40px;
+/* #first{
+   
 }
 #second{
-    margin-left: 40px;
-    margin-top: 5px;
+    
 }
 #third{
-    margin-left: 40px;
-    margin-top: 5px;
+    
 }
 #fourth{
-    margin-left: 40px;
-    margin-top: 5px;
-}
+    
+} */
 #divindiv{
 height: 100%;
 width: 60%;  
@@ -81,8 +79,6 @@ label{
     margin-top: 20px;
     padding-top: 10px;
     outline: none;
-    margin-left: 50px;
-    margin-bottom: 50px;
     font-family: FontAwesome;
     font-size: 100%;
 }
@@ -94,8 +90,6 @@ label{
     margin-top: 20px;
     padding-top: 10px;
     outline: none;
-    margin-left: 50px;
-    margin-bottom: 50px;
     font-family: FontAwesome;
     font-size: 100%;
 }
@@ -107,8 +101,6 @@ label{
     margin-top: 20px;
     padding-top: 10px;
     outline: none;
-    margin-left: 50px;
-    margin-bottom: 50px;
     font-family: FontAwesome;
     font-size: 100%;
 }
@@ -119,16 +111,11 @@ label{
     border-left: none;
     border-right: none;
     outline: none;
-    margin-left: 50px;
     font-family: FontAwesome;
     font-size: 100%;
+    resize: none;
 }
 #submit{
-position: absolute;
-width: 12%;
-height: 7%;
-top: 87%;
-left: 5%;
 border-radius: 10px;
 border: none;
 color: white;
@@ -136,6 +123,8 @@ background: linear-gradient(90deg, rgba(216,125,18,1) 36%, rgba(254,197,111,1) 9
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 cursor: pointer;
 font-size: 150%;
+width: 20%;
+height: 7%;
 
 }
 #submit:active {
@@ -147,7 +136,7 @@ font-size: 150%;
 h1{
     color: #ffffff;
     font-family: "Roboto", sans-serif;
-    margin-left: 175px;
+    margin: 0;
     font-size: 30px;
 }
 #p1{
@@ -213,7 +202,17 @@ input:focus::placeholder {
 input:focus:invalid{
     border-color: red;   
 }
-
+form{
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+label textarea{
+    height: 10%;
+    width: 10%;
+}
   /* RESPONSIVE PART */
 
  /* @media screen and (max-width: 600px) {
