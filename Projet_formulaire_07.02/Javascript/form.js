@@ -33,15 +33,15 @@ $(document).ready(function () {
             }
 
             if (data.errors.email) {
-                $("#email-group").addClass("has-error");
-                $("#email-group").append(
+                $("#subject-group").addClass("has-error");
+                $("#subject-group").append(
                   '<div class="help-block">' + data.errors.email + "</div>"
                 );
               }
     
             if (data.errors.superheroAlias) {
-              $("#superhero-group").addClass("has-error");
-              $("#superhero-group").append(
+              $("#message-group").addClass("has-error");
+              $("#message-group").append(
                 '<div class="help-block">' + data.errors.superheroAlias + "</div>"
               );
             }
@@ -55,3 +55,23 @@ $(document).ready(function () {
 
         event.preventDefault();
     });
+    
+    $("form").submit(function (event) {
+        $(".form-group").removeClass("has-error");
+        $(".help-block").remove();
+      });
+      $.ajax({
+        type: "POST",
+        url: "process.php",
+        data: formData,
+        dataType: "json",
+        encode: true,
+      })
+        .done(function(data) {
+          // ...
+        })
+        .fail(function (data) {
+          $("form").html(
+            '<div class="alert alert-danger">Le serveur ne repond pas.</div>'
+          );
+        });

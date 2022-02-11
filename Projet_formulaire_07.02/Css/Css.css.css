@@ -210,9 +210,6 @@ input:focus::placeholder {
  input::before:invalid{
      border-color: none;
  }
- input::after:invalid{
-     border-color: red;
- }
 input:focus:invalid{
     border-color: red;   
 }
