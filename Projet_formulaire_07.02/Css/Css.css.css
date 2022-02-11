@@ -205,9 +205,13 @@ textarea {
   /* RESPONSIVE PART */
 
 
-  @media screen and (max-width: 1024px) and (min-width: 768px) and (max-height: 1366px) and (min-height: 1024px){
+  @media screen and (max-width: 820px) and (min-width: 425px){
       #middle{
         flex-direction: column;
+        width: 90vw;
+        height: 90vh;
+        left: 5%;
+        top: 5%;
       }
       #feedback{
           width: 100%;
