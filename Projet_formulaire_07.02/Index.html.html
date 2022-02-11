@@ -12,15 +12,17 @@
         <div id="top"></div>   
         <div id="middle">
             <section id="divindiv">
+                <form name="myForm" action="/PHP/Php.php" onsubmit="return validateForm()" method="POST">
                 <label id="first">Nom et prénom</label>
                 <input type="text" name="Name" class="text1" placeholder="&#xf007; ex. Francois Dupont" minlength="4" required>
                 <label id="second">E-mail</label>
-                <input type="text" name="E-mail" class="text2" placeholder="&#xf0e0; ex. FrancoisDupont@gmail.com" minlength="12" required>
+                <input type="text" name="Email" class="text2" placeholder="&#xf0e0; ex. FrancoisDupont@gmail.com" minlength="12" required>
                 <label id="third">Sujet</label>
                 <input type="text" name="Subject" class="text3" placeholder="&#x3f; ex. Je voudrai faire un stage chez vous" minlength="4" required>
                 <label id="fourth">Message</label>
                 <input type="text" name="Message" class="text4" placeholder="&#xf039; Blablablablabla" minlength="4" required>
                 <button id="submit">Submit</button>
+                </form>
             </section>
             <section id="feedback">
                 <h1>Contactez nous</h1>
@@ -41,5 +43,6 @@
     </main>                                   
                     <script src="./Javascript/Javascript.js.js"></script>
                     <script src="https://kit.fontawesome.com/b636e708af.js" crossorigin="anonymous"></script> 
+                    <script src="/Javascript/form.js"></script>
                 </body>
                 </html>

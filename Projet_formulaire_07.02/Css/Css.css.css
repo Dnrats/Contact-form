@@ -206,8 +206,7 @@ input:focus::placeholder {
   }
   input:required:valid {
     border-color: green;
-  }
-    
+  } 
  input::before:invalid{
      border-color: none;
  }
