@@ -75,3 +75,13 @@ $(document).ready(function () {
             '<div class="alert alert-danger">Le serveur ne repond pas.</div>'
           );
         });
+
+        
+var email = document.querySelector("text2");
+email.addEventListener("keyup", function (event) {
+  if(email.validity.typeMismatch) {
+    email.setCustomValidity("Arretez de faire n'importe quoi!");
+  } else {
+    email.setCustomValidity("");
+  }
+});
