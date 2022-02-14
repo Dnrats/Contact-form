@@ -5,30 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./Css/Css.css.css">
+    <link rel="stylesheet" href="./Css/style.css">
 </head>
 <body>
     <main>
         <div id="top"></div>   
         <div id="middle">
             <section id="divindiv">
-                <form name="myForm" action="/PHP/Php.php" onsubmit="return validateForm()" method="POST">
+                <form name="myForm" action="./PHP/index.php" onsubmit="return validateForm()" method="post">
                 
                     <div id="name-group"><label id="first">Nom et prénom</label>
-                    <input type="text" name="Name" class="text1" placeholder="&#xf007; ex. Francois Dupont" minlength="4" required></div>
+                    <input type="text" name="Name" class="text1" aria-live="polite" placeholder="&#xf007; ex. Francois Dupont" minlength="4" required></div>
                 
                     <div id="email-group"><label id="second">E-mail</label>
-                    <input type="text" name="Email" class="text2" placeholder="&#xf0e0; ex. FrancoisDupont@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" minlength="12" required></div>
+                    <input type="text" name="Email" class="text2" aria-live="polite" placeholder="&#xf0e0; ex. FrancoisDupont@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" minlength="12" required></div>
                     
                     <div id="subject-group"><label id="third">Sujet</label>
-                    <input type="text" name="Subject" class="text3" placeholder="&#x3f; ex. Je voudrai faire un stage chez vous" minlength="4" required></div>
+                    <input type="text" name="Subject" class="text3" aria-live="polite" placeholder="&#x3f; ex. Je voudrai faire un stage chez vous" minlength="4" required></div>
                 
                     <div id="message-group"><label id="fourth">Message</label>
                     <!-- <input type="text" name="Message" class="text4" placeholder="&#xf039; Blablablablabla" minlength="4" required> -->
-                    <textarea name="Message" placeholder="&#xf039; Blablablablabla" class="text4" required></textarea>
+                    <textarea name="Message" aria-live="polite" placeholder="&#xf039; Blablablablabla" class="text4" required minlength="10" maxlength="200"></textarea>
                     </div>
                     
-                    <button id="submit">Submit</button>
+                    <button type="submit" id="submit" name="submit">Submit</button>
                 </form>
             </section>
             <section id="feedback">
@@ -48,8 +48,8 @@
             </section>            
         </div>                                         
     </main>                                   
-                    <script src="./Javascript/Javascript.js.js"></script>
+                    <script src="./Javascript/script.js"></script>
                     <script src="https://kit.fontawesome.com/b636e708af.js" crossorigin="anonymous"></script> 
-                    <script src="/Javascript/form.js"></script>
+                    <script src="./Javascript/script2.js"></script>
                 </body>
                 </html>

@@ -80,7 +80,7 @@ $(document).ready(function () {
 var email = document.querySelector("text2");
 email.addEventListener("keyup", function (event) {
   if(email.validity.typeMismatch) {
-    email.setCustomValidity("Arretez de faire n'importe quoi!");
+    email.setCustomValidity("Mettez un message approprié!");
   } else {
     email.setCustomValidity("");
   }
