@@ -20,21 +20,26 @@
         event.preventDefault();
     });
 });
+function submitForm(e, form){
+  e.preventDefault();
+  
+  fetch('index.php', {
+    method: 'post',
+    body: JSON.stringify({name: form.Name.value, email: form.Email.value, subject: form.Subject.value, message: form.Message.value})
+  }).then(function(response) {
+    return response.json();
+  }).then(function(data) {
+    //Success code goes here
+    alert('form submited')
+  }).catch(function(err) {
+    //Failure
+    alert('Error')
+  });
+}
 
-var form  = document.getElementsByTagName('form')[0];
-var email = document.getElementById('mail');
-var error = document.querySelector('.error');
+function send(e,form) {
+  fetch(form.action, {method:'post', body: new FormData(form)});
 
-email.addEventListener("input", function (event) {
-  if (email.validity.valid) {
-    error.innerHTML = ""; // 
-    error.className = "error"; 
-  }
-}, false);
-form.addEventListener("submit", function (event) {
-  if (!email.validity.valid) {
-    error.innerHTML = "J'attends une adresse e-mail correcte, mon cher !";
-    error.className = "error active";
-    event.preventDefault();
-  }
-}, false);
+  console.log('We send post asynchronously (AJAX)');
+  e.preventDefault();
+}
