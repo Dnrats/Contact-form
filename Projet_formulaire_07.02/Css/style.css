@@ -271,7 +271,7 @@ textarea::before:invalid{
   }
 
 #checked{
-font-size: 1.5rem;
+font-size: 1.3rem;
 color: white;
 font-family: FontAwesome;
 }
