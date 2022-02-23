@@ -8,6 +8,7 @@ body{
     background-color: rgb(255, 255, 255);
     margin: 0px;
     padding: 0px;
+    z-index: 1;
 }
 main{
     background-color: rgb(255, 255, 255);
@@ -21,6 +22,7 @@ height: 50vh;
 width: 100vw;
 background-color: #FFD0C1;
 }
+/* MAIN CONTAINER */
 #middle{
     background-color: rgb(255, 255, 255);
     height: 70vh;
@@ -177,7 +179,7 @@ h1{
     display: flex;
     align-items: center;
 }
-/* Responsable du texte a l'interieur du placeholder */
+/* PLACEHOLDER TEXT */
 input:focus::placeholder {
     color: transparent;
   }
@@ -211,7 +213,75 @@ textarea:focus:invalid{
 textarea::before:invalid{
     border-color: none;
 }
+
+/* ERROR MESSAGE UNDER FIELDS */
+
+#spanResult{
+    color: red;
+    width: 40%;
+    display: none;
+  }
+  #spanResult2{
+    color: red;
+    width: 40%;
+    display: none;
+  }
+  #spanResult3{
+    color: red;
+    width: 40%;
+    display: none;
+  }
+  #spanResult4{
+    color: red;
+    width: 40%;
+    display: none;
+  }
+
+/* VALIDATION POPUP */
+
+  #orange{
+      width: 40%;
+      height: 20%;
+      background: linear-gradient(90deg, rgba(216,125,18,1) 36%, rgba(254,197,111,1) 96%);
+      color: white;
+      font-weight: bold;
+      border: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      text-align: center;
+      display: none;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      border-radius: 10px;
+      font-family: 'Roboto';
+      font-size: 1.5em;
+      z-index: 100;
+  }
+  #adios{
+      width: 20%;
+      height: 20%;
+      border-radius: 5px;
+      border: none;
+      color: #ffffff;
+      background-color: #FEC56F;
+  }
+
+#checked{
+font-size: 1.5rem;
+color: white;
+font-family: FontAwesome;
+}
+.qqch{
+    filter: blur(10px);
+}
+
   /* RESPONSIVE PART */
+  
+  /* TABLET */
 
 
   @media screen and (max-width: 820px) and (min-width: 450px){
@@ -379,3 +449,6 @@ textarea::before:invalid{
             margin: 0px;
         }
   }
+
+  
+ 

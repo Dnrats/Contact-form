@@ -6,31 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./Css/style.css">
+    <script src="https://kit.fontawesome.com/b636e708af.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <main>
         <div id="top"></div>   
         <div id="middle">
             <section id="divindiv">
-                <form name="myForm" action="./PHP/index.php" onsubmit="return validateForm()" method="post">
+                <form id="mainForm" method="post" novalidate>
                 
                     <div id="name-group"><label id="first">Nom et prénom</label>
                     <input type="text" name="Name" class="text1" aria-live="polite" placeholder="&#xf007; ex. Francois Dupont" minlength="4" required></div>
-                
+                    <span id="spanResult"></span>
+
                     <div id="email-group"><label id="second">E-mail</label>
-                    <input type="text" name="Email" class="text2" aria-live="polite" placeholder="&#xf0e0; ex. FrancoisDupont@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" minlength="12" required></div>
-                    
+                    <input type="email" name="Email" class="text2" aria-live="polite" placeholder="&#xf0e0; ex. FrancoisDupont@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" minlength="12" required></div>
+                    <span id="spanResult2"></span>
+
                     <div id="subject-group"><label id="third">Sujet</label>
                     <input type="text" name="Subject" class="text3" aria-live="polite" placeholder="&#x3f; ex. Je voudrai faire un stage chez vous" minlength="4" required></div>
-                
+                    <span id="spanResult3"></span>
+
                     <div id="message-group"><label id="fourth">Message</label>
-                    <!-- <input type="text" name="Message" class="text4" placeholder="&#xf039; Blablablablabla" minlength="4" required> -->
                     <textarea name="Message" aria-live="polite" placeholder="&#xf039; Blablablablabla" class="text4" required minlength="10" maxlength="200"></textarea>
                     </div>
-                    
+                    <span id="spanResult4"></span>
+
                     <button type="submit" id="submit" name="submit">Submit</button>
-                    <span id="spanResult"></span>
+                    
                 </form>
+                
             </section>
             <section id="feedback">
                 <h1>Contactez nous</h1>
@@ -48,9 +54,9 @@
                 </div>
             </section>            
         </div>                                         
-    </main>                                   
+    </main>
+    <div id="orange">Merci pour votre message<button id="adios"><i id="checked" class="fa-regular fa-check"></i></button></div>                                   
                     <script src="./Javascript/script.js"></script>
-                    <script src="https://kit.fontawesome.com/b636e708af.js" crossorigin="anonymous"></script> 
-                    <script src="./Javascript/script2.js"></script>
+                    
                 </body>
                 </html>
