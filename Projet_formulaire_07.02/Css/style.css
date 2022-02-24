@@ -190,8 +190,9 @@ input:focus::placeholder {
      border-color: none;
  }
 input:focus:invalid{
-    border-color: red;   
+    border-color: red;     
 }
+
 form{
     margin-left: 5%;
     display: flex;

@@ -14,19 +14,19 @@ fields.text2 = document.querySelector('.text2').value;
 fields.text3 = document.querySelector('.text3').value;
 fields.text4 = document.querySelector('.text4').value;
 if (fields.text1 == "") {
-    toto.innerHTML = 'Mettez les données requises'
+    toto.innerHTML = 'Mettez entre 2 et 15 caractères'
     toto.style.display = 'flex'
 }
 if (fields.text2 == "") {
-    tata.innerHTML = 'Mettez les données requises'
+    tata.innerHTML = 'Mettez un e-mail valide en format blabla@service.domaine'
     tata.style.display = 'flex'
 }
 if (fields.text3 == "") {
-    tutu.innerHTML = 'Mettez les données requises'
+    tutu.innerHTML = 'Mettez entre 2 et 15 caractères'
     tutu.style.display = 'flex'
 }
 if (fields.text4 == "") {
-    titi.innerHTML = 'Mettez les données requises'
+    titi.innerHTML = 'Mettez entre 10 et 20 caractères'
     titi.style.display = 'flex'
 }
 function isEmail(text2) {
@@ -63,6 +63,10 @@ if (isNotEmpty(fields.text1) && isNotEmpty(fields.text2) && isNotEmpty(fields.te
         console.log(data);
         res.style.display = 'flex'
         cotelette.classList.add('qqch')
+        toto.style.display = 'none'
+        tutu.style.display = 'none'
+        titi.style.display = 'none'
+        tata.style.display = 'none'
          
     })
 }
@@ -78,7 +82,7 @@ else {
 
    function isNotEmpty(value) {
     if (value == null || typeof value == 'undefined' ) return false;
-    return (value.length > 0);
+    return (value.length >= 2);
    }
 
    bye.addEventListener('click', function () {
